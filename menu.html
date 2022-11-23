@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Menu Bán Camera</title></head>
+    <style>
+        *{
+            margin :0px;
+            padding :0px;
+        }
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 15px;
+        }
+        .menu{
+            border : 1px solid red;
+            width: 386px;
+            height : 40px ;
+            background : aqua;
+            margin : 50px auto;
+        }
+        ul.parent > li {
+            list-style-type: none;
+            float :left ;
+            position:relative;
+        }
+        ul.parent > li > a {
+            text-decoration:none  ;
+            color : red;
+            padding : 0px 15px 0px 15px;
+            line-height: 40px;
+            display :block;
+        }
+        ul.parent > li > a:hover {
+            background :orange ;
+            color : red;
+            transition : ease-in 0.2s;
+            -moz-transition :ease-in 0.2s;
+            -webkit-transition :ease-in 0.2s;
+        }
+        ul.submenu{
+            display :none ;
+            width :120px;
+            background: pink ;
+            min-height: 150px;
+            position:absolute;
+        }
+        ul.submenu li {
+            list-style-type: none;
+        }
+        ul.submenu li a {
+            color : blue;
+            text-decoration: none;
+            display :block;
+            border-bottom:1px solid violet ;
+            line-height: 40px;
+            text-indent:10px;
+        }
+        ul.submenu li a:hover{
+            background :orange ;
+            color : red;
+            transition : ease-in 0.2s;
+            -moz-transition :ease-in 0.2s;
+            -webkit-transition :ease-in 0.2s;
+        }
+        ul.parent > li:hover ul.submenu {
+            display :block ;
+            transition : ease-in 0.2s;
+            -moz-transition :ease-in 0.2s;
+            -webkit-transition :ease-in 0.2s;
+            opacity :1;
+        }
+    </style>
+    <body>
+        <div class = "menu">
+            <ul class = "parent">
+                <li><a href = "">Home</a></li>
+                <li><a href = "">About</a></li>
+                <li><a href = "">Products</a>
+                    <ul class = "submenu">
+                        <li><a href = "" >Menu sub item 1</a></li>
+                        <li><a href = "" >Menu sub item 2</a></li>
+                        <li><a href = "" >Menu sub item 3</a></li>
+                        <li><a href = "" >Menu sub item 4</a></li>
+                        <li><a href = "" >Menu sub item 5</a></li>
+                    </ul>
+                </li>
+                <li><a href = "">Services</a></li>
+                <li><a href = "">Contact</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

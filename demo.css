@@ -1,0 +1,7 @@
+#box th{
+    display:flex;
+    flex-direction: row;
+}
+input[type=submit]{
+    background-color: aqua;
+}

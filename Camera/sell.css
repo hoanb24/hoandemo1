@@ -1,0 +1,92 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+.container {
+    border : 2px solid black;
+    width: 100%;
+    height: auto;
+}
+#header {
+    background-color:crimson;
+}
+.header-logo {
+    font-size: larger;
+    color : black;
+    display: inline;
+}
+.banner {
+    border-bottom: 2px solid black ;
+}
+.menu{
+    background-color:burlywood;
+    border-bottom: 2px solid black ;
+}
+.menu div{
+    background-color: azure;
+    display: inline;
+}
+#content {
+    display: flex;
+    flex-direction: row;
+}
+#left {
+    background-color: bisque;
+    border-right : 2px solid black ;
+    width: 200px;
+    margin: 0;
+    padding :0;
+}
+
+#left li {
+    list-style-type: none;
+}
+
+.parent {
+    background-color: brown;
+    margin: 0;
+    padding :0;
+    list-style-type: none;
+}
+.parent li {
+    border : 1px solid black ;
+}
+.submenu li{
+    list-style-type: none;
+}
+.parent li:hover ul.submenu{
+    display: block;
+}
+.submenu {
+    display: none;
+    background-color: brown;
+}
+#footer{
+    border-top: solid;  
+    text-align: center;  
+}
+.right  {
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 23px;
+}
+
+#head {
+    text-align: center;
+    color: blue;
+    font-size: 80%;
+}
+#name {
+    font-size: 70%;
+    text-align: center;
+}
+#pl {
+    color: red;
+    font-size: 60%;
+    text-align: center;
+}
+#bu{
+    color: aquamarine;
+}
+

@@ -1,0 +1,10 @@
+#tailieu {
+    font-size: 30px;
+    color:red ;
+    text-align: center;
+}
+#tailieu h2:hover {
+    transition: 0.4 ease-in-out;
+    color:aqua;
+}
+
